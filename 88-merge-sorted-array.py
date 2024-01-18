@@ -10,3 +10,5 @@ class Solution(object):
             j -= 1
 
         nums1.sort()
+
+# lessons learned: replace values if values are already sorted instead of removing/appending

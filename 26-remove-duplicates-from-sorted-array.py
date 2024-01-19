@@ -11,3 +11,17 @@ class Solution(object):
             i += 1
 
 # lessons learned: compare numbers next to each other (i-1 and i) in array. Be mindful of the case like [1, 1]
+'''
+Another solution using while loop:
+
+class Solution(object):
+    def removeDuplicates(self, nums):
+        i = len(nums) - 1
+        j = len(nums) - 2
+
+        while j >= 0:
+            if nums[i] == nums[j]:
+                nums.remove(nums[i])
+            i -= 1
+            j -= 1
+'''
